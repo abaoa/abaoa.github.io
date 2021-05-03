@@ -11,9 +11,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: abaoa
-  tagline: |
-  Qt Engineer
-  C++ Engineer
+  tagline: Qt Engineer
   date_format: "%Y-%b-%-d"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
