@@ -16,6 +16,7 @@
     <section class="about">
       <div class="about-header {{condensed_class}}">
       <div class="about-title">
+	  <!--头像设置-->
       <a href="{{ "/" | relative_url}}">
         {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
         <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
@@ -24,14 +25,19 @@
         <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
         {% endif %}
       </a>
+	  <!--头像设置end-->
+	  <!--昵称-->
       <h2 id="title">
         <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
       </h2>
+	  <!--昵称end-->
       </div>
+	  <!--职称-->
       {%- if site.plainwhite.tagline -%}
       <p class="tagline">{{ site.plainwhite.tagline }}</p>
       {%- endif -%}
       </div>
+	  <!--社交账号-->
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
       <ul class="social about-footer {{condensed_class}}">
@@ -44,6 +50,7 @@
         {%- endif -%}
       </ul>
       {%- endif -%}
+	  <!--导航栏-->
       {%- if site.plainwhite.navigation -%}
       <nav class="navigation about-footer {{condensed_class}}">
         <ul>
@@ -55,8 +62,10 @@
         </ul>
       </nav>
       {%- endif -%}
+	  <!--copyright-->
       <p class="about-footer {{condensed_class}}">&copy;
-        {{ "now" | date: "%Y" }}</p>
+	  {{ "now" | date: "%Y" }}</p>
+	  <!--配色模式-->
       {%- if site.plainwhite.dark_mode -%}
       <div class="about-footer {{condensed_class}}">
         <p>Dark Mode
@@ -78,6 +87,7 @@
       {{ footer }}
     </footer>
   </main>
+  
   {% if site.plainwhite.dark_mode %}
   <script type="text/javascript" src="{{ "/assets/js/darkmode.js" | relative_url }}"></script>
   {% endif %}

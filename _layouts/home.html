@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!--标题-->
 {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
 {%- endif -%}
@@ -10,6 +11,7 @@ layout: default
 
 {%- if site.posts.size > 0 -%}
   <ul class="posts">
+  <!--搜索框-->
     <li class="posts-labelgroup" id="posts-labelgroup">
       <h1 id="posts-label">posts</h1>
       {% if site.plainwhite.search %}
@@ -23,17 +25,21 @@ layout: default
       {% endif %}
     </li>
 
+	<!--所有文章-->
     {%- for post in site.posts -%}
       <li>
-        {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
-        <a class="post-link" href="{{ post.url | relative_url }}">
+        {%- assign date_format = site.plainwhite.date_format | default: "%Y/%m/%d%" -%}
+        <!--文章标题-->
+		<a class="post-link" href="{{ post.url | relative_url }}">
           <h2 class="post-title">{{ post.title | escape }}</h2>
         </a>
         <div class="post-meta">
+		<!--文章时间-->
           <div class="post-date">
             <i class="icon-calendar"></i>
             {{ post.date | date: date_format }}
           </div>
+		  <!--文章分类-->
           {%- if post.categories.size > 0-%}
           <ul class="post-categories">
             {%- for tag in post.categories -%}
@@ -42,6 +48,7 @@ layout: default
           </ul>
           {%- endif -%}
         </div>
+		<!--文章摘录-->
         <div class="post">
           {%- if site.show_excerpts -%}
             {{ post.excerpt }}
