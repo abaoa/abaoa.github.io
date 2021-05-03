@@ -25,7 +25,7 @@ permalink: /about/
 <li>Github：<a href="https://github.com/abaoa" target="_blank">abaoa</a></li>
 <li>
 微信公众号：abaoa <br />
-<img style="height:224px;width:710px;" src="{{ assets_base_url }}/assets/wc_qrcode.png" alt="abaoa" />
+<img style="height:109px;width:300px;" src="{{ assets_base_url }}/assets/wc_qrcode.png" alt="abaoa" />
 </li>
 </ul>
 

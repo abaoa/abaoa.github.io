@@ -64,6 +64,19 @@ plainwhite:
 # Build settings
 theme: plainwhite
 
+# ---------------- #
+#       RSS        #
+# ---------------- #
+#subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+#markdown: kramdown
+#kramdown:
+ #   input: GFM
+#highlighter: rouge
+#paginate: 2
 
 # 文章字数统计
 word_count:
@@ -88,4 +101,6 @@ gitalk:
 
 plugins:
   - jekyll-seo-tag
-#  - jekyll-feed
+  #- jekyll-feed
+  #- jekyll-paginate
+  #- rouge
