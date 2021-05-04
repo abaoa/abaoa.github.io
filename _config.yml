@@ -1,9 +1,9 @@
-title: 阿宝啊
+title: 阿宝啊的博客
 author: abaoa
 email: 1098580179@qq.com
-description: 我是阿宝啊，一个还不错的程序猿！
+description: 我是阿宝啊，一个还不错的程序猿！这是阿宝啊的博客
 show_excerpts: true # set to true to show excerpts on the homepage
-#baseurl: "/blog"
+#baseurl: "/blog" #网站根目录
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -72,11 +72,14 @@ theme: plainwhite
 # ---------------- #
 #      Jekyll      #
 # ---------------- #
-#markdown: kramdown
-#kramdown:
- #   input: GFM
-#highlighter: rouge
-#paginate: 2
+markdown: kramdown
+kramdown:
+  input:  GFM
+  use_coderay: true
+highlighter: rouge
+#paginate: 1
+
+gems: ['jekyll-paginate']
 
 # 文章字数统计
 word_count:

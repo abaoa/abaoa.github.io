@@ -1,22 +1,68 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ site.plainwhite.html_lang }}">
+
+<head>
+  {%- include head.html -%}
+  
+  <style>
+	#post-newDiv {
+		width: 100%;
+		height: 100%;
+		-webkit-box-orient: horizontal;
+		display: -webkit-box;
+	}
+	
+	.newDiv {
+		-webkit-box-flex: 1;
+	}
+	
+	.one {
+		width: 30%
+	}
+	
+	.two {
+		width: 40%
+		-webkit-box-flex: 2;
+	}
+	
+	.three {
+		width: 30%
+	}
+        </style>
+</head>
+
+{%- if site.plainwhite.condensed_mobile contains page.layout -%}
+{% assign condensed_class = "condensed" %}
+{% else %}
+{% assign condensed_class = "" %}
+{%- endif -%}
+
 {%- assign date_format = site.plainwhite.date_format | default: "%Y/%m/%d%" -%}
-<div class="post-container">
+<div id="post-newDiv">
+    <div class="newDiv one">
+	 
+	</div>
+	<!-- 文章 -->
+    <div class="newDiv two">
   <!-- 文章标题 -->
   <a class="post-link" href="{{ page.url | relative_url }}">
-    <h2 class="post-title">{{ page.title | escape }}</h2>
+    <h2 align="center" class="post-title">{{ page.title | escape }}</h2>
   </a>
-  <div class="post-meta">
+  <div class="post-meta1">
+  
     <!-- 文章时间 -->
-    <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
+	<span style="margin-right:24px; class="meta-info">
+          <span class="octicon octicon-calendar"></span> {{ page.date | date: date_format }}
+    </span>
+	
 	<!-- 文章类别 -->
 	{% for cat in page.categories %}
-    <span class="meta-info">
+    <span style="margin-right:24px; class="meta-info">
         <span class="octicon octicon-file-directory"></span>
            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
         </span>
     {% endfor %}
+	
 	<!-- 文章字数统计 -->
 	{%- if site.word_count.enabled -%}
 	<span class="meta-info">
@@ -24,21 +70,25 @@ layout: default
             共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，约 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟
     </span>
     {%- endif -%}
-	<!-- 文章类别 -->
-    {%- if page.categories.size > 0 -%}
-    <ul class="post-categories">
-      {%- for tag in page.categories -%}
-      <li>{{ tag }}</li>
-      {%- endfor -%}
-    </ul>
-    {%- endif -%}
   </div>
   <!-- 文章内容 -->
   <div class="post">
+	<br>
     {{ content }}
+	
+	<!-- 文章copyright -->
+	{%- if page.copyright -%}
+	{% include blogcopyright.html %}
+	{%- endif -%}
   </div>
   <!-- 文章评论 -->
   <div class="comment">
       {% include comments.html %}
     </div>
 </div>
+
+    <div class="newDiv three">
+	</div>
+</div>
+
+
