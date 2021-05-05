@@ -7,9 +7,9 @@ comments: false
 permalink: /categories/
 ---
 
-<div id="categories-cateDiv">
-    <div class="cateDiv cateDiv-one">
-	 <section class="container posts-content">
+<div >
+{%- include categories.html -%}
+<section class="container posts-content">
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
 <h3 id="{{ category[0] }}">{{ category | first }}</h3>
@@ -25,10 +25,6 @@ permalink: /categories/
 {% endfor %}
 </section>
 <!-- /section.content -->
-	</div>
-	<div class="cateDiv cateDiv-two">
-	 {%- include categories.html -%}
-	</div>
 </div>	
 
 
