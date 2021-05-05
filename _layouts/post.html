@@ -44,9 +44,11 @@ layout: default
 	
   </div>
   <!-- 文章评论 -->
+  {% if page.comments %}
   <div class="comment">
       {% include comments.html %}
-    </div>
+  </div>
+  {% endif %}
 </div>
 
 
