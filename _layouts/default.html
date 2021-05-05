@@ -37,19 +37,7 @@
       <p class="tagline">{{ site.plainwhite.tagline }}</p>
       {%- endif -%}
       </div>
-	  <!--社交账号-->
       {% capture footer %}
-      {%- if site.plainwhite.social_links != '' -%}
-      <ul class="social about-footer {{condensed_class}}">
-        {%- if site.plainwhite.social_links.github -%}
-        <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
-          <li>
-            <i class="icon-github-circled"></i>
-          </li>
-        </a>
-        {%- endif -%}
-      </ul>
-      {%- endif -%}
 	  <!--导航栏-->
       {%- if site.plainwhite.navigation -%}
       <nav class="navigation about-footer {{condensed_class}}">
@@ -62,9 +50,6 @@
         </ul>
       </nav>
       {%- endif -%}
-	  <!--copyright-->
-      <p class="about-footer {{condensed_class}}">&copy;
-	  {{ "now" | date: "%Y" }}</p>
 	  <!--配色模式-->
       {%- if site.plainwhite.dark_mode -%}
       <div class="about-footer {{condensed_class}}">

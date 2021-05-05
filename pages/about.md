@@ -32,3 +32,17 @@ permalink: /about/
 ### 关于本站
 
 本博客外观基于 [samarsault](https://github.com/samarsault) 修改，感谢！
+<div>
+  <span id="busuanzi_container_site_pv" style="margin-right:15px;display:none;">
+    本站访问量：<span id="busuanzi_value_site_pv"></span> 次
+  </span>
+  <span id="busuanzi_container_site_uv" style="margin-right:15px;display:none;">
+    本站访客数：<span id="busuanzi_value_site_uv"></span> 人
+  </span>
+  <span id="busuanzi_container_page_pv" style="margin-right:15px;display:none;">
+    本页访问量：<span id="busuanzi_value_page_pv"></span> 次
+  </span>
+</div>
+
+<p>&copy;
+{{ "now" | date: "%Y" }} {{ site.author }} since {{ site.busuanzi.start_date }}</p>
