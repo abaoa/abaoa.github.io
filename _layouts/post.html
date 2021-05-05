@@ -1,49 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ site.plainwhite.html_lang }}">
-
-<head>
-  {%- include head.html -%}
-  
-  <style>
-	#post-newDiv {
-		width: 100%;
-		height: 100%;
-		-webkit-box-orient: horizontal;
-		display: -webkit-box;
-	}
-	
-	.newDiv {
-		-webkit-box-flex: 1;
-	}
-	
-	.one {
-		width: 30%
-	}
-	
-	.two {
-		width: 40%
-		-webkit-box-flex: 2;
-	}
-	
-	.three {
-		width: 30%
-	}
-        </style>
-</head>
-
-{%- if site.plainwhite.condensed_mobile contains page.layout -%}
-{% assign condensed_class = "condensed" %}
-{% else %}
-{% assign condensed_class = "" %}
-{%- endif -%}
+---
+layout: default
+---
 
 {%- assign date_format = site.plainwhite.date_format | default: "%Y/%m/%d%" -%}
-<div id="post-newDiv">
-    <div class="newDiv one">
-	 
-	</div>
-	<!-- 文章 -->
-    <div class="newDiv two">
+<!-- 文章 -->
+<div class="post-container">
   <!-- 文章标题 -->
   <a class="post-link" href="{{ page.url | relative_url }}">
     <h2 align="center" class="post-title">{{ page.title | escape }}</h2>
@@ -80,6 +41,7 @@
 	{%- if page.copyright -%}
 	{% include blogcopyright.html %}
 	{%- endif -%}
+	
   </div>
   <!-- 文章评论 -->
   <div class="comment">
@@ -87,8 +49,5 @@
     </div>
 </div>
 
-    <div class="newDiv three">
-	</div>
-</div>
 
 
