@@ -40,9 +40,17 @@
 	{% endif %}
 </li>
 <li>
+	{% if {{paginator.total_pages}} == 1 %}
+	<a href="{{site.url}}/">
+		<span>末页</span>
+	</a>
+	{% else %}
 	<a href="{{ site.url}}/page{{paginator.total_pages}}">
 		<span>末页</span>
 	</a>
+	{% endif %}
+
+	
 </li>
 <li class="disabled">
 	<span>第{{paginator.page}}页 / 共{{paginator.total_pages}}页</span>
