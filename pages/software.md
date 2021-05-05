@@ -7,5 +7,4 @@ comments: false
 permalink: /software/
 ---
 
-# <center> 阿宝啊-个人作品 </center>
-##### <center> 待完善 </center>
+##### <center> 马上就来，敬请期待！ </center>

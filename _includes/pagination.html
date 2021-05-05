@@ -1,31 +1,50 @@
-<div class="pagination text-align">
-      <div class="btn-group">
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-              <a href="{{ site.url }}/" class="btn btn-outline">&laquo;</a>
-          {% else %}
-              <a href="{{ site.url }}/page{{paginator.previous_page}}"  class="btn btn-outline">&laquo;</a>
-          {% endif %}
-        {% else %}
-            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
-        {% endif %}
-        {% if paginator.page == 1 %}
-            <a href="javascript:;" class="active btn btn-outline">1</a>
-        {% else %}
-            <a href="{{ site.url }}/"  class="btn btn-outline">1</a>
-        {% endif %}
-        {% for count in (2..paginator.total_pages) %}
-          {% if count == paginator.page %}
-              <a href="javascript:;"  class="active btn btn-outline">{{count}}</a>
-          {% else %}
-              <a href="{{ site.url }}/page{{count}}"  class="btn btn-outline">{{count}}</a>
-          {% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}
-            <a href="{{ site.url }}/page{{paginator.next_page}}"  class="btn btn-outline">&raquo;</a>
-        {% else %}
-            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
-        {% endif %}
-        </div>
-    </div>
-    <!-- /pagination -->
+<ul class="pagination">
+<li>
+	<a href="{{ site.url}}/">
+		<span>首页</span>
+	</a>
+</li>
+<li>
+{% if paginator.page == 1 %}
+	<span>&laquo;</span>
+{% else %}
+	{% if paginator.previous_page == 1 %}
+	<a href="{{ site.url}}/">
+	{% else %}
+	<a href="{{ site.url}}/page{{ paginator.previous_page }}">
+	{% endif %}
+		<span>&laquo;</span>
+	</a>
+{% endif %}
+</li>
+{% for i in (1..paginator.total_pages) limit:9 offset:{{paginator.page-1}} %}
+	{% if paginator.page == i %}
+<li class="active">
+	{% else %}
+<li>
+	{% endif %}
+	{% if i == 1 %}
+	<a href="{{site.url}}/">{{i}}</a>
+	{% else %}
+	<a href="{{site.url}}/page{{i}}">{{i}}</a>
+	{% endif %}
+</li>
+{% endfor %}
+<li>
+	{% if paginator.page == paginator.total_pages %}
+	<span>&raquo;</span>
+	{% else %}
+	<a href="{{ site.url}}/page{{ paginator.next_page }}">
+		<span>&raquo;</span>
+	</a>
+	{% endif %}
+</li>
+<li>
+	<a href="{{ site.url}}/page{{paginator.total_pages}}">
+		<span>末页</span>
+	</a>
+</li>
+<li class="disabled">
+	<span>第{{paginator.page}}页 / 共{{paginator.total_pages}}页</span>
+</li>
+</ul>
