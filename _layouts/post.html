@@ -31,17 +31,25 @@ layout: default
             共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，约 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟
     </span>
     {%- endif -%}
-  </div>
-  <!-- 文章内容 -->
-  <div class="post">
-	<br>
-    {{ content }}
+	
+	<!-- 文章观看人数 -->
+	{%- if site.busuanzi.enabled -%}
+	<span style="margin-left:24px; class="meta-info">
+        <span class="octicon octicon-eye"></span>
+         <span id="busuanzi_container_page_pv">
+		 <span id="busuanzi_value_page_pv"></span>
+  </span>
+    </span>
+    {%- endif -%}
 	
 	<!-- 文章copyright -->
 	{%- if page.copyright -%}
-	{% include blogcopyright.html %}
+	{% include copyright.html %}
 	{%- endif -%}
-	
+  </div>
+  <!-- 文章内容 -->
+  <div class="post">
+    {{ content }}
   </div>
   <!-- 文章评论 -->
   {% if page.comments %}
