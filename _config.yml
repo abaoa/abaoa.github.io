@@ -79,7 +79,7 @@ kramdown:
 highlighter: rouge
 #paginate: 1
 
-gems: ['jekyll-paginate']
+#gems: ['jekyll-paginate']
 
 # 文章字数统计
 word_count:
