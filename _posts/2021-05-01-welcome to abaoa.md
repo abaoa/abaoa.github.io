@@ -6,7 +6,7 @@ categories: [abaoa]
 published: true
 comments: false
 copyright: true
-OriginalArticle: true
+original: true
 permalink: 
 ---
 

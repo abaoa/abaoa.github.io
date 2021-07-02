@@ -6,7 +6,7 @@ categories: [opencv]
 published: true
 comments: false
 copyright: true
-OriginalArticle: false
+original: false
 permalink: 
 ---
 

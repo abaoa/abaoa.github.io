@@ -11,6 +11,14 @@ layout: default
   </a>
   <div class="post-meta1">
   
+    <!-- 文章类型 -->
+	<span style="margin-right:24px; class="meta-info">
+	{%- if page.original -%}
+	<span class="octicon octicon-calendar"></span> "原创"
+	{%- endif -%}
+          
+    </span>
+	
     <!-- 文章时间 -->
 	<span style="margin-right:24px; class="meta-info">
           <span class="octicon octicon-calendar"></span> {{ page.date | date: date_format }}
