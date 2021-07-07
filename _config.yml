@@ -1,4 +1,4 @@
-title: 阿宝啊
+title: 月白风清
 author: abaoa
 email: 1098580179@qq.com
 description: 我是阿宝啊，一个还不错的程序猿!
@@ -48,9 +48,9 @@ plainwhite:
     #   instance: example.com
   #导航
   navigation:
-    - title: 主页
+    - title: 文章
       url: "/"
-    - title: 分类
+    - title: 归类
       url: "/categories/"
     - title: 软件
       url: "/software/"
