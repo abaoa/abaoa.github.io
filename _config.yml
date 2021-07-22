@@ -102,8 +102,8 @@ comments_provider: gitalk
 gitalk:
     owner: abaoa
     repo: abaoa-blog-comments
-    clientID: 50a0eeeae1f4ab4bbb79
-    clientSecret: e852bde3fd8cabab34b793c6c558d2fdbfbd5de5 
+    clientID: d37065ec8964a278555f
+    clientSecret: 9b3ac5d4322d66eb14f50ef56ba4ab6e45c93cce  
 
 plugins:
   #- jekyll-paginate-v2
