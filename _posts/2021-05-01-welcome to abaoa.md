@@ -4,7 +4,7 @@ title: "Welcome to abaoa"
 date: 2021-05-01 16:00:00
 categories: [abaoa]
 published: true
-comments: false
+comments: true
 copyright: true
 original: true
 reprintAuthor: ""
