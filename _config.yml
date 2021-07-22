@@ -101,7 +101,7 @@ comments_provider: gitalk
 
 gitalk:
     owner: abaoa
-    repo: abaoa-blog-comments
+    repo: abaoa.github.io
     clientID: d37065ec8964a278555f
     clientSecret: 9c4c48cd6c02c5a2a5a7df1331a2c021b8438b45   
 
