@@ -7,10 +7,10 @@ published: true
 comments: false
 copyright: true
 original: false
+reprintAuthor:
+reprintUrl: "https://blog.csdn.net/sinat_34774186/article/details/107930301"
 permalink: 
 ---
-
-[原文链接](https://blog.csdn.net/sinat_34774186/article/details/107930301)
 
 1.cv::Mat转QImage(拷贝转换)
 

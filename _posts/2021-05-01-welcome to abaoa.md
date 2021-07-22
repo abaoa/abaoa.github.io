@@ -7,6 +7,8 @@ published: true
 comments: false
 copyright: true
 original: true
+reprintAuthor:
+reprintUrl:
 permalink: 
 ---
 
