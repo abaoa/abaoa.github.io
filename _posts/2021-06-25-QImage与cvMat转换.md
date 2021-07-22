@@ -10,6 +10,8 @@ original: false
 permalink: 
 ---
 
+[原文链接](https://blog.csdn.net/sinat_34774186/article/details/107930301)
+
 1.cv::Mat转QImage(拷贝转换)
 
 ~~~cpp
@@ -190,6 +192,3 @@ cv::Mat QImage2cvMat(QImage& image)
 	return mat;
 }
 ~~~
-
-
-原文地址：<https://blog.csdn.net/sinat_34774186/article/details/107930301>
