@@ -7,9 +7,7 @@ published: true
 comments: false
 copyright: true
 original: true
-reprintAuthor: ""
-reprintUrl: ""
-permalink: ""
+permalink: 
 ---
 
 欢迎来到abaoa!

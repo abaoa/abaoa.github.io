@@ -51,7 +51,14 @@ layout: default
     </span>
     {%- endif -%}
 	
-	
+	<!-- 文章copyright -->
+	{%- if page.copyright -%}
+	{%- if page.original -%}
+	{% include originalCopyright.html %}
+	{%- else -%}
+	{% include reprintCopyright.html %}
+	{%- endif -%}
+	{%- endif -%}
   </div>
   <!-- 文章内容 -->
   <div class="post">
