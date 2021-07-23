@@ -100,11 +100,13 @@ busuanzi:
 comments_provider: gitalk
 
 gitalk:
+    admin: abaoa
     owner: abaoa
     repo: abaoa.github.io
     clientID: d37065ec8964a278555f
     clientSecret: 9c4c48cd6c02c5a2a5a7df1331a2c021b8438b45   
-
+    id: md5(location.pathname)
+    
 plugins:
   #- jekyll-paginate-v2
   - jekyll-seo-tag
