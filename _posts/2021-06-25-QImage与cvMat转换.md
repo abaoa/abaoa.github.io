@@ -12,6 +12,9 @@ reprintUrl: "https://blog.csdn.net/sinat_34774186/article/details/107930301"
 permalink: 
 ---
 
+* 目录
+{:toc}
+
 1.cv::Mat转QImage(拷贝转换)
 
 ~~~cpp
