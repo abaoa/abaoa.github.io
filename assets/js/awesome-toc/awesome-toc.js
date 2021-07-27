@@ -100,10 +100,11 @@
                 var link = documentRef.createElement("a");
                 link.setAttribute("href", "#"+ baseConfig.sideBarPrefix + index);
                 link.textContent = baseConfig.itemPrefix + heading.textContent;   // html标签会被去掉
-
+				$(link).css({
+                   "color": baseConfig.css.fontColor,
+                });
                 $(link).click(function(e){
-                    $(this).parent().parent().find("a").css({"color": baseConfig.css.fontColor});
-                    
+					$(this).parent().parent().find("a").css({"color": baseConfig.css.activeFontColor});
                     var offsetTop = $($(this).attr("href")).offset().top - baseConfig.topOffset;
                     disableMenuScrollEvent();
                     $('html, body').stop().animate(
@@ -111,7 +112,7 @@
                             scrollTop: offsetTop 
                         },
                         {
-                            duration: 300,
+                            duration: 100,
                             complete: enableMenuScrollEvent,
                         }
                     );
@@ -179,8 +180,6 @@
             
         }).html("<span class=\"octicon octicon-three-bars\"></span>");
 
-       
-        
         $("body").append(toggleBtn);
 
         toggleBtn.onclick = toggleButtonClickListener;
@@ -256,7 +255,7 @@
         // Get the id of the current element
         cur = cur[cur.length-1];
         var id = cur && cur.length ? cur[0].id : "";
-
+		
         if (scrollVar.lastId !== id) {
             scrollVar.lastId = id;
             scrollVar.menuItems.css({"color": baseConfig.css.fontColor});
