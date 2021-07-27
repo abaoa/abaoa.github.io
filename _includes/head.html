@@ -9,28 +9,7 @@
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/vendor/octicons/octicons/octicons.css">
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/categories.css">
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/common.css">
-
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 <!--bootstrap-->
 <!--link rel="stylesheet" href="{{ assets_base_url }}/assets/vendor/bootstrap/css/bootstrap.css"-->
-
-
-
-<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-<script async src="{{ assets_base_url }}/assets/vendor/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <title>{{ page.title | default: site.title }}</title>
-{% if site.plainwhite.dark_mode %}
-<script type="text/javascript" src="{{ "/assets/js/darkmode.js" | relative_url }}"></script>
-{% endif %}
-
-<!--百度统计-->
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?89b5682b799c711b98b3768a48122ead";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
