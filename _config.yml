@@ -75,6 +75,7 @@ theme: plainwhite
 #      Jekyll      #
 # ---------------- #
 markdown: kramdown
+toc_levels: 1……3
 kramdown:
   input:  GFM
   use_coderay: true
@@ -83,6 +84,9 @@ paginate: 10
 paginate_path: "page:num"
 
 gems: ['jekyll-paginate']
+
+awesometoc:
+   enableToc: true 
 
 # 文章字数统计
 word_count:

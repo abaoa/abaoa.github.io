@@ -12,10 +12,7 @@ reprintUrl: "https://blog.csdn.net/sinat_34774186/article/details/107930301"
 permalink: 
 ---
 
-* 目录
-{:toc}
-
-1.cv::Mat转QImage(拷贝转换)
+# 1. cv::Mat转QImage(拷贝转换)
 
 ~~~cpp
 QImage cvMat2QImage(const cv::Mat& mat)
@@ -162,7 +159,7 @@ QImage cvMat2QImage(const cv::Mat& mat)
 ~~~~
 
 
-2.QImage转cv::Mat(共享内存的转换)
+# 2. QImage转cv::Mat(共享内存的转换)
 
 ~~~cpp
 cv::Mat QImage2cvMat(QImage& image)

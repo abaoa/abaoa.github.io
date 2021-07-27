@@ -61,7 +61,7 @@ layout: default
 	{%- endif -%}
   </div>
   <!-- 文章内容 -->
-  <div class="post">
+  <div class="post" id="post-id">
     {{ content }}
   </div>
   <!-- 文章评论 -->
@@ -70,6 +70,8 @@ layout: default
       {% include comments.html %}
   </div>
   {% endif %}
+  
+  {% include awesome-toc.html %}
 </div>
 
 
