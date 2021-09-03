@@ -64,6 +64,9 @@ layout: default
   <div class="post" id="post-id">
     {{ content }}
   </div>
+  
+  {% include relatedArticles.html %}
+  
   <!-- 文章评论 -->
   {% if page.comments %}
   <div class="comment">
