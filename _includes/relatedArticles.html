@@ -1,10 +1,9 @@
 <div style="margin-top:2em;padding:0 1.5em;border:1px solid #d3d3d3;">
   <h3>相关文章 </h3>
   <ul>
-  {%- for post in posts -%}
+  {%- assign date_format = site.plainwhite.date_format | default: "%Y/%m/%d%" -%}
+  {%- for post in site.posts -%}
     <li>
-	{%- assign date_format = site.plainwhite.date_format | default: "%Y/%m/%d%" -%}
-	
 	{{ post.title | escape }}<a href="{{ post.url | relative_url }}" target="_blank">{{ page.reprintUrl }}</a>
 	
 	</li>
