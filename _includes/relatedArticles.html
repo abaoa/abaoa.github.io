@@ -2,10 +2,14 @@
   <h3>相关文章 </h3>
   <ul>
   {%- assign date_format = site.plainwhite.date_format | default: "%Y/%m/%d%" -%}
-  {%- for post in site.posts -%}
+  {%- for p in site.posts -%}
+  {%- if p.categories == {{ site.categories }} -%}
+  {%- if post.url != {{ site.url }}{{ page.url }} -%}
     <li>
-	<a href="{{ post.url | relative_url }}" target="_blank">{{ post.title | escape }}</a>
+	<a href="{{ p.url | relative_url }}" target="_blank">{{ p.title | escape }}</a>
 	</li>
+	{%- endif -%}
+	{%- endif -%}
 	{%- endfor -%}
   </ul>
 </div>
