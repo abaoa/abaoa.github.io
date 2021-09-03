@@ -3,7 +3,7 @@
   <ul>
   {%- for p in site.posts -%}
   
-  <h3>printpage(p.categories) </h3>
+  <h3>p.categories ||| {{ page.categories }}</h3>
   {%- if p.categories == {{ page.categories }} -%}
   
   <li>
