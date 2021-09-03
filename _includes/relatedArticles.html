@@ -2,7 +2,8 @@
   <h3>相关文章 </h3>
   <ul>
   {%- for p in site.posts -%}
-  printpage(p.categories)
+  
+  <h3>printpage(p.categories) </h3>
   {%- if p.categories == {{ page.categories }} -%}
   
   <li>
