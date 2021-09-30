@@ -29,3 +29,18 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+
+<!--layui-->
+<script src="/assets/vendor/layui/layui.js"></script>
+<script>
+layui.use('carouse_sw', function(){
+  var carouse_sw = layui.carouse_sw;
+  //建造实例
+  carouse_sw.render({
+    elem: '#software'
+    ,width: '100%' //设置容器宽度
+    ,arrow: 'always' //始终显示箭头
+    //,anim: 'updown' //切换动画方式
+  });
+});
+</script>
