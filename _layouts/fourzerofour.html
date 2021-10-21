@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.plainwhite.html_lang }}">
+
+<head>
+  {%- include head.html -%}
+  
+  <style>
+	h2 {
+		font-feature-settings: "lnum";
+		background-color: #ddd;
+		width: 140px;
+		height: 140px;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-size: 20px;
+		height: 80vh;
+	}
+	p {text-align: center; line-height: 2em;}
+	</style>
+</head>
+
+{%- if site.plainwhite.condensed_mobile contains page.layout -%}
+{% assign condensed_class = "condensed" %}
+{% else %}
+{% assign condensed_class = "" %}
+{%- endif -%}
+
+<body>
+  <h2>404</h2>
+  <p>Page not found.</p>
+  
+  <div align="center">
+    <p>Copyright © 2021 阿宝啊 保留所有权利。</p>
+	<a href="http://beian.miit.gov.cn/">粤ICP备2021096813号-1</a>
+	<br/>
+	<br/>
+  </div>
+  
+{%- include js.html -%}
+</body>
+
+</html>
