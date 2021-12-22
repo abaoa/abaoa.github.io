@@ -5,7 +5,6 @@ description: 阿宝啊,专注开发Qt软件,编写Qt技术博客
 show_excerpts: true # set to true to show excerpts on the homepage
 #baseurl: "/blog" #网站根目录
 
-
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
