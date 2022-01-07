@@ -1,38 +1,18 @@
 
 <h3>文章分类</h3>
-<div id="blog-categories">
-  <ul class="list-group">
-    {% assign sorted_categories = site.categories | sort %}
-    {% for category in sorted_categories %}
-    <li class="list-group-item">
-    <a href="#{{ category[0] }}">{{ category | first }}</a>
-    <span class="badge">{{ category[1].size }}</span>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-
-
 <div class="layui-collapse" lay-accordion>
   <div class="layui-colla-item">
-    <h2 class="layui-colla-title">杜甫</h2>
-    <div class="layui-colla-content layui-show">内容区域</div>
-  </div>
-  <div class="layui-colla-item">
-    <h2 class="layui-colla-title">李清照</h2>
-    <div class="layui-colla-content layui-show">内容区域</div>
-  </div>
-  <div class="layui-colla-item">
-    <h2 class="layui-colla-title">鲁迅</h2>
-    <div class="layui-colla-content layui-show">内容区域</div>
+  {% assign sorted_categories = site.categories | sort %}
+  {% for category in sorted_categories %}
+    <h2 class="layui-colla-title">{{ category | first }} {{ category[1].size }}</h2>
+    <div class="layui-colla-content layui-show">
+	{% for post in category.last %}
+	<li class="posts-list-item">
+	<span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
+	<a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+	</li>
+	{% endfor %}
+	</div>
+  {% endfor %}
   </div>
 </div>
-
-<script type="text/javascript">
-
-  $(document).ready(function(){
-    $("#blog-categories li").css('text-transform','capitalize')
-  });
-
-</script>
-
