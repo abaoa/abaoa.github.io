@@ -4,4 +4,3 @@ source "https://rubygems.org"
 gemspec
 gem 'jekyll-paginate', group: :jekyll_plugins
 gem 'font-awesome-less'
-gem 'plainwhite', '~> 0.3.0'
