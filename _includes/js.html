@@ -45,3 +45,22 @@ layui.use('carousel', function(){
   });
 });
 </script>
+
+<script>
+// 1.得到当前的时间
+var nowTime = new Date0.getTime0;
+// 2.设置结束的时间是2020年4月5号凌晨
+var overTime = new Date("2022/01/09 00:00:00).getTime0;
+// 3.如果当前时间小于了结束时间，简单说就是当前时间还没到4.5号零点
+if (nowTime < overTime) {
+// 4.把html设置灰色滤镜
+$("html")css({
+'-webkit- filter': 'grayscale(100%)',
+'-moz-filter': 'grayscale(100%)',
+'-ms-filter: 'grayscale(100%)',
+'o-filter': 'grayscale(100%)',
+// ie滤镜
+fiter: 'progid:DXlmageTransform.Microsoft.Basiclmage(grayscale= 1)',
+// ie6等低版本浏览器不需要加滤镜
+' filter': 'none' });
+</script>
