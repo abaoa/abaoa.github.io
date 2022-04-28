@@ -18,3 +18,25 @@ permalink: /software/
 压缩包 | 20.5 MB | 2022-03-30 | Win10 x64 |  [DeskFish_1.0.0.0_FullPackage.7z](https://abaoa.cn/qapp/DeskFish/1.0.0.0/packages/DeskFish_1.0.0.0_FullPackage.7z)
 
 </details>
+
+### Build from Source
+
+<details>
+<summary>Clone Source Code</summary>
+
+- #### Option 1: Clone source code from GitHub
+
+  ```bash
+  git clone https://github.com/Oneflow-Inc/oneflow --depth=1
+  ```
+
+- #### Option 2: Download from Aliyun
+
+  If you are in China, please download OneFlow source code from: https://oneflow-public.oss-cn-beijing.aliyuncs.com/oneflow-src.zip
+
+  ```bash
+  curl https://oneflow-public.oss-cn-beijing.aliyuncs.com/oneflow-src.zip -o oneflow-src.zip
+  unzip oneflow-src.zip
+  ```
+
+  </details>
