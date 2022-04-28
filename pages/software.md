@@ -7,8 +7,8 @@ comments: false
 permalink: /software/
 ---
 
-
-# 1. DeskFish V1.0.0.0
+<details>
+<summary> DeskFish V1.0.0.0</summary>
 
 ##### 发布说明：1. 第一个版本发布。
 
@@ -17,3 +17,4 @@ permalink: /software/
 安装包 | 51.5 MB | 2022-03-30 | Win10 x64 | [DeskFish_1.0.0.0_InstallPackage.exe](https://abaoa.cn/qapp/DeskFish/1.0.0.0/packages/DeskFish_1.0.0.0_InstallPackage.exe)
 压缩包 | 20.5 MB | 2022-03-30 | Win10 x64 |  [DeskFish_1.0.0.0_FullPackage.7z](https://abaoa.cn/qapp/DeskFish/1.0.0.0/packages/DeskFish_1.0.0.0_FullPackage.7z)
 
+</details>
