@@ -3,6 +3,7 @@ layout: post
 title: "QImage与cv::Mat互相转换-包括32F图像转换"
 date: 2021-06-25 16:00:00
 categories: [opencv]
+article: true
 published: true
 comments: false
 copyright: true

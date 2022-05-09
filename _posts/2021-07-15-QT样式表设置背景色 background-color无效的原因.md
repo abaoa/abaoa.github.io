@@ -3,6 +3,7 @@ layout: post
 title: "QT样式表设置背景色 background-color无效的原因"
 date: 2021-07-15 15:39:39
 categories: [Qt]
+article: true
 published: true
 comments: false
 copyright: false

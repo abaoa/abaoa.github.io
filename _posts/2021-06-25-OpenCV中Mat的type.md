@@ -3,6 +3,7 @@ layout: post
 title: "OpenCV中Mat的type"
 date: 2021-06-25 17:00:00
 categories: [opencv]
+article: true
 published: true
 comments: false
 copyright: true
