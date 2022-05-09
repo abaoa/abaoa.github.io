@@ -13,6 +13,8 @@ permalink: /software/
 更新内容：  
 **增加了用户机制**  
 
+
+
 包名 | 大小 | MD5 | 链接
 :---: | :---: | :---: | :---
 增量包 | 2.45 MB | 7A64F2507FBF39013DFCA06CA0338D53 | [DeskFish_1.0.0.1_DeltaPackage.7z](https://abaoa.cn/qapp/DeskFish/1.0.0.1/packages/DeskFish_1.0.0.1_DeltaPackage.7z)
