@@ -13,13 +13,11 @@ permalink: /software/
 更新内容：  
 **增加了用户机制**  
 
-
-
 包名 | 大小 | MD5 | 链接
 :---: | :---: | :---: | :---
-增量包 | 2.45 MB | 7A64F2507FBF39013DFCA06CA0338D53 | [DeskFish_1.0.0.1_DeltaPackage.7z](https://abaoa.cn/qapp/DeskFish/1.0.0.1/packages/DeskFish_1.0.0.1_DeltaPackage.7z)
-安装包 | 51.71 MB | 85BDA4E2B4DBFCDAC0944DC935EE216B | [DeskFish_1.0.0.1_InstallPackage.exe](https://abaoa.cn/qapp/DeskFish/1.0.0.1/packages/DeskFish_1.0.0.1_InstallPackage.exe)
-压缩包 | 20.57 MB | BF38CAA4395C4D5CD3761C05DED0AFEE | [DeskFish_1.0.0.1_FullPackage.7z](https://abaoa.cn/qapp/DeskFish/1.0.0.1/packages/DeskFish_1.0.0.1_FullPackage.7z)
+增量包 | 2.45 MB | 73554D1D6BC56701DAC2DF9C191DEC72 | [DeskFish_1.0.0.1_DeltaPackage.7z](https://abaoa.cn/qapp/DeskFish/1.0.0.1/packages/DeskFish_1.0.0.1_DeltaPackage.7z)
+安装包 | 51.71 MB | 99C2CE43453A4BC70752F48BA0CD7BEE | [DeskFish_1.0.0.1_InstallPackage.exe](https://abaoa.cn/qapp/DeskFish/1.0.0.1/packages/DeskFish_1.0.0.1_InstallPackage.exe)
+压缩包 | 20.57 MB | 745855C66354263FE3FE414CC8C7608D | [DeskFish_1.0.0.1_FullPackage.7z](https://abaoa.cn/qapp/DeskFish/1.0.0.1/packages/DeskFish_1.0.0.1_FullPackage.7z)
 
 ***
 
