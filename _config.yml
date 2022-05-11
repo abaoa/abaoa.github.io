@@ -2,7 +2,7 @@ title: 月白风清｜阿宝啊
 author: abaoa
 email: 1098580179@qq.com
 description: 阿宝啊,专注开发Qt软件,编写Qt技术博客
-show_excerpts: true # set to true to show excerpts on the homepage
+show_excerpts: true # 设置为true在主页上显示摘要
 #baseurl: "/blog" #网站根目录
 
 # Minima date format
