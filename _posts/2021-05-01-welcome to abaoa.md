@@ -10,7 +10,7 @@ copyright: true
 original: true
 reprintAuthor: ""
 reprintUrl: ""
-permalink: rmalink: /:title/
+permalink: /:title/
 ---
 
 欢迎来到abaoa!

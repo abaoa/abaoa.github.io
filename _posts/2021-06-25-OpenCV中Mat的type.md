@@ -10,7 +10,7 @@ copyright: true
 original: true
 reprintAuthor:
 reprintUrl:
-permalink: 
+permalink: /:title/
 ---
 
 opencv中Mat存在各种类型，其中mat有一个type()的函数可以返回该Mat的类型。
