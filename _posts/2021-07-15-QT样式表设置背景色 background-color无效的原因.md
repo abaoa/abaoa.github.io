@@ -10,7 +10,7 @@ copyright: false
 original: false
 reprintAuthor: "qq_31073871"
 reprintUrl: "https://blog.csdn.net/qq_31073871/article/details/79965015"
-permalink: /:title/
+permalink: /blog/:categories/:title/
 ---
 
 例如我们给一个按钮设置背景色为红色：
