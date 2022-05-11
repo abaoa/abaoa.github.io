@@ -16,6 +16,7 @@
     <section class="about">
       <div class="about-header {{condensed_class}}">
       <div class="about-title">
+	  
 	  <!--头像设置-->
       <a href="{{ "/" | relative_url}}">
         {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
@@ -26,11 +27,13 @@
         {% endif %}
       </a>
 	  <!--头像设置end-->
+	  
 	  <!--昵称-->
       <h2 id="title">
         <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
       </h2>
 	  <!--昵称end-->
+	  
       </div>
 	  <!--职称-->
       {%- if site.plainwhite.tagline -%}
@@ -38,6 +41,8 @@
       {%- endif -%}
       </div>
       {% capture footer %}
+	  
+	  
 	  <!--导航栏-->
       {%- if site.plainwhite.navigation -%}
       <nav class="navigation about-footer {{condensed_class}}">
@@ -50,6 +55,8 @@
         </ul>
       </nav>
       {%- endif -%}
+	  <!--导航栏end-->
+	  
 	  <!--配色模式-->
       {%- if site.plainwhite.dark_mode -%}
       <div class="about-footer {{condensed_class}}">
@@ -61,17 +68,25 @@
           </label>
         </p>
       </div>
+	  <!--配色模式end-->
+	  
       {%- endif -%}
       {% endcapture %}
       {{ footer }}
     </section>
+	
+	<!--内容-->
     <section class="content">
       {{ content }}
     </section>
+	
+	<!--页脚-->
     <footer class="{{condensed_class}}">
       {{ footer }}
     </footer>
-  </main>
+	
+	
+</main>
   
 {%- include bottom.html -%} 
 {%- include js.html -%}
