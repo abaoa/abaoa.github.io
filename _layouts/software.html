@@ -2,20 +2,44 @@
 layout: default
 ---
 
-<div class="post-container">
+<div class="post-container"> 
 
-  <!-- div class="layui-carousel" id="software">
-  <div carousel-item>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+<div class="layui-collapse" lay-accordion="">
+
+{% for app in site.softwares %}
+	<div class="layui-colla-item">
+    <h2 class="layui-colla-title">{{ app.name | escape }}</h2>
+    {%- if forloop.first -%}
+    <div class="layui-colla-content layui-show">
+	{%- else -%} 
+	<div class="layui-colla-content">
+	{%- endif -%}
+	
+	
+	<ul class="layui-timeline">
+	
+	<!--版本-->
+{%- for post in site.posts -%}
+{%- if post.categories[0] == app.name -%}
+	<li class="layui-timeline-item">
+    <i class="layui-icon layui-timeline-axis"></i>
+    <div class="layui-timeline-content layui-text">
+    <h3 class="layui-timeline-title">{{ post.title | escape }}</h3>
+      {{post.content}}
+	  </br>
+    </div>
+	</li>
+{%- endif -%}
+{%- endfor -%}
+</ul> 
+
   </div>
-  </div -->
+  </div>
+{% endfor %}
 
 
-  <div class="post">
+
+<div class="post">
     {{ content }}
-  </div>
+</div>
 </div>

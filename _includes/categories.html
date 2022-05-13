@@ -1,18 +1,26 @@
 
 <h3>文章分类</h3>
-<div class="layui-collapse" lay-accordion>
+<div class="layui-collapse" lay-accordion="">
+{% assign sorted_categories = site.categories | sort %}
+{% for category in sorted_categories %}
   <div class="layui-colla-item">
-  {% assign sorted_categories = site.categories | sort %}
-  {% for category in sorted_categories %}
-    <h2 class="layui-colla-title">{{ category | first }} {{ category[1].size }}</h2>
+    <h2 class="layui-colla-title">{{ category | first }} ({{ category[1].size }})</h2>
+	{%- if forloop.first -%}
     <div class="layui-colla-content layui-show">
+	{%- else -%} 
+	<div class="layui-colla-content">
+	{%- endif -%}
+	
 	{% for post in category.last %}
 	<li class="posts-list-item">
 	<span class="posts-list-meta">{{ post.date | date:"%Y-%m-%d" }}</span>
 	<a class="posts-list-name" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
 	</li>
 	{% endfor %}
+	
 	</div>
-  {% endfor %}
   </div>
+  
+{% endfor %}
+  
 </div>

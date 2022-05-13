@@ -1,7 +1,6 @@
 
 <!--所有文章-->
 {%- for post in paginator.posts -%}
-{%- if post.article -%}
   <li>
 	{%- assign date_format = site.plainwhite.date_format | default: "%Y/%m/%d%" -%}
 	<!--文章标题-->
@@ -48,6 +47,5 @@
 	  {%- endif -%}
 	</div>
   </li>
-{%- endif -%}
 {%- endfor -%}
 {% include pagination.html %}

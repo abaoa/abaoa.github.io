@@ -31,7 +31,7 @@ var _hmt = _hmt || [];
 </script>
 
 <!--layui-->
-<script src="/assets/vendor/layui/layui.js"></script>
+<script src="{{ "/assets/vendor/layui/layui.js" | relative_url }}"></script>
 <script>
 layui.use('carousel', function(){
   var carousel = layui.carousel;
@@ -63,4 +63,35 @@ $("html")css({
 fiter: 'progid:DXlmageTransform.Microsoft.Basiclmage(grayscale= 1)',
 // ie6等低版本浏览器不需要加滤镜
 ' filter': 'none' });
+</script>
+
+<!--marked 链接：https://www.zhihu.com/question/53311539/answer/1837760394 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+var m=document.querySelectorAll('code[markdown]');
+for(var i=0;i<m.length;i++){
+m[i].outerHTML='<p>'+marked(m[i].innerHTML)+'</p>';
+}
+</script>
+
+<!--marked 链接：https://www.zhihu.com/question/53311539/answer/1877123773 -->
+<script type="text/javascript" src="{{ "/assets/js/marked.min.js" | relative_url }}"></script>
+<script type="text/javascript">
+marked.setOptions({
+       renderer: new marked.Renderer(),
+       gfm: true,
+       tables: true,
+       breaks: false,
+       pedantic: false,
+       sanitize: false,
+       smartLists: true,
+       smartypants: false,
+       highlight: function (code,lang) {
+            //使用 highlight 插件解析文档中代码部分
+            return hljs.highlightAuto(code,[lang]).value;
+       }
+});
+
+let text = marked($(".markdown").text());
+$(".markdown").html(text);
 </script>

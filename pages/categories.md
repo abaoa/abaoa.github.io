@@ -7,8 +7,4 @@ comments: false
 permalink: /categories/
 ---
 
-<div >
 {%- include categories.html -%}
-</div>	
-
-

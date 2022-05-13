@@ -115,3 +115,6 @@ plugins:
   - jekyll-seo-tag
   #- jekyll-feed
   #- rouge
+  
+softwares:
+    - name: DeskFish
