@@ -1,0 +1,60 @@
+.NewsBox {
+            margin:20px 20px;
+            padding: 2px 2px;
+            min-height:300px;
+            border:2px solid gray;
+            border-radius:15px;
+            background-color: white;
+    }
+        .NewsTitle {
+            color:balck;
+            margin-left:20px;
+            margin-right:20px;
+
+            padding-bottom:10px;
+            border-bottom:5px solid black;
+        }
+        .NewsText {
+            margin-left:20px;
+            margin-right:20px;
+           color:balck;
+           font-size:18px;
+        }
+        .NewsImage
+        {
+            margin-left:20px;
+            margin-right:20px;
+        }
+        .NewsImg {
+           padding: 0px 0px;
+           border:2px solid gray;
+           border-radius:15px;
+           width:100%;
+           height:auto;
+           max-height:300px;
+        }
+
+        .NewsUser {
+            margin-left:20px;
+            margin-right:20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-top:2px solid #F1F1F1;
+            width:auto;
+            min-height:40px;
+        }
+        .NewsUserImg {
+            width:20px;
+            height:20px;
+            display: inline;
+            vertical-align:middle;
+        }
+        .NewsUserName {
+            font-weight:bold;
+            display: inline;
+            vertical-align:middle;
+        }
+        .NewsUserText {
+            display: inline;
+            vertical-align:middle;
+        }
