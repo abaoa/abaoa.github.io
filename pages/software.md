@@ -7,4 +7,4 @@ comments: false
 permalink: /software/
 ---
  
-### [进入自助注册系统](https://abaoa.cn/qapp/license/index.html)
+### [进入自助注册系统](https://blog.abaoa.cn/qapp/license/index.html)
